@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.sidebar {
+  @apply text-white fixed h-full w-1/5 bg-gradient-to-b from-gray-900 to-gray-600 rounded-tr-[40px]
+  flex flex-col gap-6 justify-start pt-[10%] items-center
+}
+
+.hr-line {
+  @apply border-0 h-px bg-gradient-to-r from-transparent via-white/75 to-transparent  w-[80%]
+}
+
+.hover:hover {
+  color: black;
+  transition: all 0.4s;
+}
+.hover:hover::before {
+  position: absolute;
+  content: '';
+  width: 90%;
+  height: 100%;
+  background-color: #cbd5e1;
+  bottom: 0;
+  left: 22%;
+  transition: all 0.4s;
+  color: black;
+  z-index: -50;
+  border-radius: 999px;
+}
+
+/* .hover:hover::after {
+  position: absolute;
+  content: '';
+  width: 10%;
+  height: 100%;
+  background-color: red;
+  bottom: 0;
+  right: -2%;
+  top: 90%;
+  transition: all 0.4s;
+  color: black;
+  z-index: -50;
+  border-radius: 999px;
+} */
+.hover:hover::after {
+  content: "";
+  position: absolute;
+  margin: -20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* new */
+  box-shadow: 0 0 0 150px #522d5b;
+}
