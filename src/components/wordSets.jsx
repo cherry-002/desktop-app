@@ -24,28 +24,26 @@ const WordSets = () => {
       {
         breakpoint: 1024,
         settings: {
+          dots: false,
+          infinite: true,
+          speed: 500,
           slidesToShow: 2,
           slidesToScroll: 1,
-          infinite: true,
-          dots: false,
-        }
+          arrows: false,
+        },
       },
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          initialSlide: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
+          dots: false,
+          infinite: true,
+          speed: 500,
           slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
+          slidesToScroll: 1,
+          arrows: false,
+        },
+      },
+    ],
   };
   return (
     <section>
@@ -53,10 +51,16 @@ const WordSets = () => {
         <p className="font-extrabold text-2xl">Word sets</p>
         <div>
           <button onClick={previous}>
-            <IoIosArrowBack fontSize={20} className='hover:text-gray-500 duration-300'/>
+            <IoIosArrowBack
+              fontSize={20}
+              className="hover:text-gray-500 duration-300"
+            />
           </button>
           <button onClick={next}>
-            <IoIosArrowForward fontSize={20} className='hover:text-gray-500 duration-300'/>
+            <IoIosArrowForward
+              fontSize={20}
+              className="hover:text-gray-500 duration-300"
+            />
           </button>
         </div>
       </div>
@@ -67,10 +71,22 @@ const WordSets = () => {
           }}
           {...settings}
         >
-          <WordSetItem title key={1} />
-          <WordSetItem title key={2} />
-          <WordSetItem title key={3} />
-          <WordSetItem title key={4} />
+          <WordSetItem
+            title
+            key={1}
+          />
+          <WordSetItem
+            title
+            key={2}
+          />
+          <WordSetItem
+            title
+            key={3}
+          />
+          <WordSetItem
+            title
+            key={4}
+          />
         </Slider>
       </div>
     </section>
