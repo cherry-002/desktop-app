@@ -23,4 +23,6 @@ export default function initGame() {
   });
 
   k.add([k.sprite("background"), k.pos(0, -70), k.scale(8)]);
+
+  const player = k.add(k.sprite);
 }

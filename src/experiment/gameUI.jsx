@@ -6,7 +6,7 @@ const GameUi = () => {
     initGame();
   }, []); 
 
-  return <canvas id="game"></canvas>;
+  return <canvas id="game" className=''></canvas>;
 };
 
 export default GameUi;

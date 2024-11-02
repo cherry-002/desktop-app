@@ -74,18 +74,22 @@ const WordSets = () => {
           <WordSetItem
             title
             key={1}
+            gradient='bg-gradient-to-b from-purple-300 to-indigo-600'
           />
           <WordSetItem
             title
             key={2}
+            gradient='bg-gradient-to-r from-cyan-400 to-blue-500'
           />
           <WordSetItem
             title
             key={3}
+            gradient='bg-gradient-to-r from-teal-200 to-teal-500'
           />
           <WordSetItem
             title
             key={4}
+            gradient='bg-gradient-to-r from-rose-300 to-rose-500'
           />
         </Slider>
       </div>
