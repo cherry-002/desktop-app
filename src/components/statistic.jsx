@@ -3,7 +3,7 @@ import { LineGraph } from './lineGraph'
 
 const Statistic = () => {
   return (
-    <div className='h-full  flex items-center justify-center bg-white pb-2 rounded-xl ml-4'>
+    <div className='h-full  flex items-center justify-center bg-white pb-2 rounded-xl ml-4 -mt-4'>
       <LineGraph />
     </div>
   )
