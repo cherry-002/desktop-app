@@ -1,6 +1,6 @@
 const MainItem = ({ children }) => {
   return (
-    <div className="bg-red-300">
+    <div className="">
       {children}
     </div>
   );

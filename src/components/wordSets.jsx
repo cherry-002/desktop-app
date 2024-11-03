@@ -46,9 +46,9 @@ const WordSets = () => {
     ],
   };
   return (
-    <section>
-      <div className="flex justify-between items-center">
-        <p className="font-extrabold text-2xl">Word sets</p>
+    <section className='pt-12'>
+      <div className="flex justify-between items-center px-4 mb-6">
+        <p className="font-extrabold text-2xl px-2">Word Sets</p>
         <div>
           <button onClick={previous}>
             <IoIosArrowBack
@@ -64,7 +64,7 @@ const WordSets = () => {
           </button>
         </div>
       </div>
-      <div className="slider-container py-4">
+      <div className="py-4 pl-4">
         <Slider
           ref={(slider) => {
             sliderRef = slider;
@@ -72,24 +72,28 @@ const WordSets = () => {
           {...settings}
         >
           <WordSetItem
-            title
+            title='Cities and Countries'
             key={1}
             gradient='bg-gradient-to-b from-purple-300 to-indigo-600'
+            img='/image/earth.png'
           />
           <WordSetItem
-            title
+            title='Date and Time'
             key={2}
             gradient='bg-gradient-to-r from-cyan-400 to-blue-500'
+            img='/image/time.png'
           />
           <WordSetItem
-            title
+            title='Animals'
             key={3}
             gradient='bg-gradient-to-r from-teal-200 to-teal-500'
+            img='/image/hatch.png'
           />
           <WordSetItem
-            title
+            title='Numbers'
             key={4}
             gradient='bg-gradient-to-r from-rose-300 to-rose-500'
+            img='/image/numbers.png'
           />
         </Slider>
       </div>
