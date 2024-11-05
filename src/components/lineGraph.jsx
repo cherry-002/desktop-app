@@ -19,25 +19,32 @@ ChartJS.register(
   PointElement,
   Title,
   Tooltip,
-  CategoryScale,
+  CategoryScale
 );
 
 export const LineGraph = () => {
-
   const options = {
     responsive: true,
     plugins: {
       legend: {
-        position: "top",
+        position: 'top',
       },
       title: {
-        display: true,
-        text: 'Test results'
-      }
-    }
-  }
+        display: false,
+        text: 'Test results',
+      },
+    },
+  };
 
   // const data = {}
 
-  return <Line options={options} data={lineChartData} />;
+  return (
+    <div className="flex justify-center bg-white rounded-xl h-[95%]">
+      <Line
+        className="px-4 py-4"
+        options={options}
+        data={lineChartData}
+      />
+    </div>
+  );
 };

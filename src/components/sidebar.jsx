@@ -7,6 +7,7 @@ import { IoSettingsSharp } from 'react-icons/io5';
 import { IoIosBookmarks } from 'react-icons/io';
 import { AiFillExperiment } from 'react-icons/ai';
 
+
 const Sidebar = () => {
   return (
     <div className="sidebar">

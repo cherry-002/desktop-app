@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import initGame from './experiment/initGame';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import ErrorPage from './components/err-page';
 import GameUi from './experiment/gameUi';
-import Dashboard from './routes/Dashboard';
+import Dashboard from './routes/dashboard';
 
 const router = createBrowserRouter([
   {

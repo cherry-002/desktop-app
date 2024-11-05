@@ -47,8 +47,8 @@ const WordSets = () => {
   };
   return (
     <section className='pt-12'>
-      <div className="flex justify-between items-center px-4 mb-6">
-        <p className="font-extrabold text-2xl px-2">Word Sets</p>
+      <div className="flex justify-between items-center px-4 mb-4">
+        <p className="font-bold text-2xl px-2">Word Sets</p>
         <div>
           <button onClick={previous}>
             <IoIosArrowBack
