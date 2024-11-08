@@ -9,6 +9,9 @@ import { AiFillExperiment } from 'react-icons/ai';
 
 
 const Sidebar = () => {
+
+  // const sidebar = ["Dashboard", "Lessons", "Dictionary", "Experiment", "Setting", "Log out"]
+
   return (
     <div className="sidebar">
       <SidebarItem

@@ -14,8 +14,8 @@
 }
 
 .sidebar {
-  @apply text-white fixed h-full w-1/5 bg-gradient-to-b from-gray-900 to-gray-600 rounded-tr-[40px]
-  flex flex-col gap-6 justify-start pt-[10%] items-center min-w-52 max-[850px]:gap-4 max-[850px]:pt-[20%] max-[850px]:text-[90%] max-[850px]:rounded-tr-[30px];
+  @apply text-white fixed h-full w-1/5 max-md:w-1/12 bg-gradient-to-b from-gray-900 to-gray-600 rounded-tr-[40px] max-md:rounded-tr-[0px]
+  flex flex-col gap-6 justify-start pt-[10%] items-center min-w-52 max-[850px]:min-w-fit max-[850px]:gap-4 max-[850px]:pt-[20%] max-[850px]:text-[90%] max-[850px]:rounded-tr-[30px];
 }
 
 .hr-line {

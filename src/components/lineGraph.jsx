@@ -39,7 +39,7 @@ export const LineGraph = () => {
   // const data = {}
 
   return (
-    <div className="flex justify-center bg-white rounded-xl h-[95%]">
+    <div className="flex justify-center bg-white rounded-xl h-[90%]">
       <Line
         className="px-4 py-4"
         options={options}
