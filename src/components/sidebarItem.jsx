@@ -13,7 +13,7 @@ const SidebarItem = ({ icon, text, route }) => {
 
   return (
     <div className='w-full flex justify-center relative'>
-      <Link to={route} className='flex justify-center gap-2 hover-sidebar items-center px-8 py-3 text-nowrap max-md:px-0 max-md:gap-0'>
+      <Link to={route} className='flex justify-center gap-2 hover-sidebar items-center px-8 py-3 text-nowrap max-md:px-0 max-md:gap-0 max-sm:px-2'>
         <div>{icon}</div>
         {width < 768 ? null : <div>{text}</div>}
         <span className='second-after'></span>

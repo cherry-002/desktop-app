@@ -8,10 +8,10 @@ import QuickStart from '../components/quickStart';
 const Dashboard = () => {
   return (
     <section className="main-section">
-      <MainItem children={<WordSets />} />
-      <MainItem children={<Profile />} />
-      <MainItem children={<Statistic />} />
-      <MainItem children={<QuickStart />} />
+      <WordSets />
+      <Profile />
+      <Statistic />
+      <QuickStart />
     </section>
   );
 };

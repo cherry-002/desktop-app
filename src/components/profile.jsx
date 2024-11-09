@@ -2,7 +2,7 @@ import React from 'react';
 
 const Profile = () => {
   return (
-    <div className='h-full flex flex-col items-center justify-center'>
+    <div className='h-full flex flex-col items-center justify-center max-[1150px]:order-1'>
       <div className='flex justify-center items-center h-28 w-28 rounded-full border-4 bg-gradient-to-t from-teal-300 via-sky-300 to-purple-400 border-white z-10'>
         <img src="./image/cool-cat.png" height={70} width={70} />
       </div>

@@ -1,6 +1,6 @@
 const MainItem = ({ children }) => {
   return (
-    <div className="">
+    <div>
       {children}
     </div>
   );

@@ -22,7 +22,7 @@ const WordSets = () => {
     arrows: false,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1200,
         settings: {
           dots: false,
           infinite: true,
@@ -32,24 +32,13 @@ const WordSets = () => {
           arrows: false,
         },
       },
-      {
-        breakpoint: 600,
-        settings: {
-          dots: false,
-          infinite: true,
-          speed: 500,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          arrows: false,
-        },
-      },
     ],
   };
   return (
-    <section className='pt-12'>
+    <section className='pt-12 max-[1150px]:pt-4 max-[1150px]:pr-8 max-[1150px]:order-3'>
       <div className="flex justify-between items-center px-4 mb-4">
         <p className="font-bold text-2xl px-2">Word Sets</p>
-        <div>
+        <div className='flex justify-center items-end -mb-1'>
           <button onClick={previous}>
             <IoIosArrowBack
               fontSize={20}

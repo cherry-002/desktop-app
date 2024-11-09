@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import SidebarItem from './sidebarItem';
 import { FaHouse } from 'react-icons/fa6';
 import { FaBook } from 'react-icons/fa';
@@ -10,10 +10,24 @@ import { AiFillExperiment } from 'react-icons/ai';
 
 const Sidebar = () => {
 
-  // const sidebar = ["Dashboard", "Lessons", "Dictionary", "Experiment", "Setting", "Log out"]
+  const sidebarRef = useRef(null)
+  useEffect(() => {
+    if (sidebarRef.current) {
+      document.documentElement.style.setProperty("--sidebar-width", `${sidebarRef.current.offsetWidth}px`)
+      console.log(sidebarRef.current.offsetWidth)
+    }
+    const handleResize = () => {
+      if (sidebarRef.current) {
+        document.documentElement.style.setProperty("--sidebar-width", `${sidebarRef.current.offsetWidth}px`)
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  },[])
 
   return (
-    <div className="sidebar">
+    <div className="sidebar" ref={sidebarRef}>
       <SidebarItem
         route={'dashboard'}
         icon={<FaHouse accentHeight={'5px'} />}

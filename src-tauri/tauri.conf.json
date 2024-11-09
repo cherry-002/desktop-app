@@ -14,7 +14,10 @@
       {
         "title": "Learn English",
         "width": 1280,
-        "height": 720
+        "height": 720,
+        "minWidth": 600,
+        "minHeight": 800,
+        "maximized": true
       }
     ],
     "security": {

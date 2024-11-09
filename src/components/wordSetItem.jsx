@@ -17,7 +17,7 @@ const WordSetItem = ({ gradient, title, img }) => {
         </div>
         
       </div>
-      <p className='text-white text-[1.25rem] font-[700] p-2 px-4'>{title}</p>
+      <p style={{fontSize: "clamp(17px, 1.35vw, 22px)"}} className='text-white font-[700] p-2 px-4 text-nowrap'>{title}</p>
     </div>
   )
 }
