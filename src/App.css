@@ -21,7 +21,8 @@ body {
   @apply grid-cols-[70%_1fr] grid-rows-2;
 
   /* screen width 1150px or smaller */
-  @apply max-[1150px]:grid max-[1150px]:grid-rows-4 max-[1150px]:grid-cols-1 max-[1150px]:w-auto max-[1150px]:pr-8;
+  @apply max-[1150px]:grid max-[1150px]:grid-cols-1 max-[1150px]:w-auto max-[1150px]:pr-8 max-[1150px]:auto-rows-max;
+
 
 }
 

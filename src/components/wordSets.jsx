@@ -35,9 +35,9 @@ const WordSets = () => {
     ],
   };
   return (
-    <section className='pt-12 max-[1150px]:pt-4 max-[1150px]:pr-8 max-[1150px]:order-3'>
-      <div className="flex justify-between items-center px-4 mb-4">
-        <p className="font-bold text-2xl px-2">Word Sets</p>
+    <section className='pt-12 max-[1150px]:p-0 max-[1150px]:order-3'>
+      <div className="flex justify-between items-center px-4 mb-4 max-[1150px]:mb-0 max-[1150px]:px-0">
+        <p className="font-bold text-2xl px-2 max-[1150px]:px-0">Word Sets</p>
         <div className='flex justify-center items-end -mb-1'>
           <button onClick={previous}>
             <IoIosArrowBack
@@ -53,7 +53,7 @@ const WordSets = () => {
           </button>
         </div>
       </div>
-      <div className="py-4 pl-4">
+      <div className="py-4 pl-4 max-[1150px]:p-0">
         <Slider
           ref={(slider) => {
             sliderRef = slider;
